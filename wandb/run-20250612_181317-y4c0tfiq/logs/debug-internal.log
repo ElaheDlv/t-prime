@@ -1,0 +1,180 @@
+2025-06-12 18:13:17,293 INFO    StreamThr :31952 [internal.py:wandb_internal():87] W&B internal server running at pid: 31952, started at: 2025-06-12 18:13:17.292748
+2025-06-12 18:13:17,296 DEBUG   HandlerThread:31952 [handler.py:handle_request():144] handle_request: status
+2025-06-12 18:13:17,297 INFO    WriterThread:31952 [datastore.py:open_for_write():85] open: /home/trudes/Projects/t-prime/wandb/run-20250612_181317-y4c0tfiq/run-y4c0tfiq.wandb
+2025-06-12 18:13:17,297 DEBUG   SenderThread:31952 [sender.py:send():336] send: header
+2025-06-12 18:13:17,307 DEBUG   SenderThread:31952 [sender.py:send():336] send: run
+2025-06-12 18:13:17,712 DEBUG   HandlerThread:31952 [handler.py:handle_request():144] handle_request: check_version
+2025-06-12 18:13:17,713 INFO    SenderThread:31952 [dir_watcher.py:__init__():216] watching files in: /home/trudes/Projects/t-prime/wandb/run-20250612_181317-y4c0tfiq/files
+2025-06-12 18:13:17,713 INFO    SenderThread:31952 [sender.py:_start_run_threads():1067] run started: y4c0tfiq with start time 1749766397.291762
+2025-06-12 18:13:17,713 DEBUG   SenderThread:31952 [sender.py:send_request():363] send_request: summary_record
+2025-06-12 18:13:17,713 INFO    SenderThread:31952 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2025-06-12 18:13:17,714 DEBUG   SenderThread:31952 [sender.py:send_request():363] send_request: check_version
+2025-06-12 18:13:17,878 DEBUG   HandlerThread:31952 [handler.py:handle_request():144] handle_request: run_start
+2025-06-12 18:13:17,925 DEBUG   HandlerThread:31952 [system_info.py:__init__():31] System info init
+2025-06-12 18:13:17,925 DEBUG   HandlerThread:31952 [system_info.py:__init__():46] System info init done
+2025-06-12 18:13:17,925 INFO    HandlerThread:31952 [system_monitor.py:start():151] Starting system monitor
+2025-06-12 18:13:17,925 INFO    SystemMonitor:31952 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2025-06-12 18:13:17,925 INFO    HandlerThread:31952 [system_monitor.py:probe():172] Collecting system info
+2025-06-12 18:13:17,925 INFO    SystemMonitor:31952 [interfaces.py:start():168] Started cpu
+2025-06-12 18:13:17,926 INFO    SystemMonitor:31952 [interfaces.py:start():168] Started disk
+2025-06-12 18:13:17,927 INFO    SystemMonitor:31952 [interfaces.py:start():168] Started gpu
+2025-06-12 18:13:17,928 INFO    SystemMonitor:31952 [interfaces.py:start():168] Started memory
+2025-06-12 18:13:17,929 INFO    SystemMonitor:31952 [interfaces.py:start():168] Started network
+2025-06-12 18:13:17,942 DEBUG   HandlerThread:31952 [system_info.py:probe():195] Probing system
+2025-06-12 18:13:17,974 DEBUG   HandlerThread:31952 [system_info.py:_probe_git():180] Probing git
+2025-06-12 18:13:17,981 DEBUG   HandlerThread:31952 [system_info.py:_probe_git():188] Probing git done
+2025-06-12 18:13:17,981 DEBUG   HandlerThread:31952 [system_info.py:probe():241] Probing system done
+2025-06-12 18:13:17,981 DEBUG   HandlerThread:31952 [system_monitor.py:probe():181] {'os': 'Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.31', 'python': '3.9.23', 'heartbeatAt': '2025-06-12T22:13:17.942307', 'startedAt': '2025-06-12T22:13:17.287170', 'docker': None, 'cuda': None, 'args': ('--model=baseline_cnn1d', '--channel=None', '--snr_db=range', '--cp_path=./results_slice512', '--postfix=all20MHz', '--raw_path=./data/DATASET_QYLUR_ANOM_small_chunked', '--protocols', 'noAnomaly', 'cfoAnomaly', 'envDistortionAnomaly', 'pilotJamAnomaly', 'powerAnomaly', '--slicelen=512'), 'state': 'running', 'program': '/home/trudes/Projects/t-prime/baseline_models/TPrime_torch_train.py', 'codePath': 'baseline_models/TPrime_torch_train.py', 'git': {'remote': 'https://github.com/genesys-neu/t-prime.git', 'commit': '05b3366c5ba1ac6d4a5432e90ae0edf6efb7b1b2'}, 'email': 'Strudeau12@seaburyhall.orgTrudeau.s@northeastern.edu', 'root': '/home/trudes/Projects/t-prime', 'host': 'Sage-Omen', 'username': 'trudes', 'executable': '/home/trudes/anaconda3/envs/t-prime2/bin/python3', 'cpu_count': 10, 'cpu_count_logical': 20, 'cpu_freq': {'current': 2687.9989999999984, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 2687.999, 'min': 0.0, 'max': 0.0}, {'current': 2687.999, 'min': 0.0, 'max': 0.0}, {'current': 2687.999, 'min': 0.0, 'max': 0.0}, {'current': 2687.999, 'min': 0.0, 'max': 0.0}, {'current': 2687.999, 'min': 0.0, 'max': 0.0}, {'current': 2687.999, 'min': 0.0, 'max': 0.0}, {'current': 2687.999, 'min': 0.0, 'max': 0.0}, {'current': 2687.999, 'min': 0.0, 'max': 0.0}, {'current': 2687.999, 'min': 0.0, 'max': 0.0}, {'current': 2687.999, 'min': 0.0, 'max': 0.0}, {'current': 2687.999, 'min': 0.0, 'max': 0.0}, {'current': 2687.999, 'min': 0.0, 'max': 0.0}, {'current': 2687.999, 'min': 0.0, 'max': 0.0}, {'current': 2687.999, 'min': 0.0, 'max': 0.0}, {'current': 2687.999, 'min': 0.0, 'max': 0.0}, {'current': 2687.999, 'min': 0.0, 'max': 0.0}, {'current': 2687.999, 'min': 0.0, 'max': 0.0}, {'current': 2687.999, 'min': 0.0, 'max': 0.0}, {'current': 2687.999, 'min': 0.0, 'max': 0.0}, {'current': 2687.999, 'min': 0.0, 'max': 0.0}], 'disk': {'total': 250.92389297485352, 'used': 91.52878952026367}, 'gpu': 'NVIDIA GeForce RTX 3060 Laptop GPU', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3060 Laptop GPU', 'memory_total': 6442450944}], 'memory': {'total': 31.185882568359375}}
+2025-06-12 18:13:17,981 INFO    HandlerThread:31952 [system_monitor.py:probe():182] Finished collecting system info
+2025-06-12 18:13:17,981 INFO    HandlerThread:31952 [system_monitor.py:probe():185] Publishing system info
+2025-06-12 18:13:17,981 DEBUG   HandlerThread:31952 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2025-06-12 18:13:17,981 DEBUG   HandlerThread:31952 [system_info.py:_save_pip():67] Saving pip packages done
+2025-06-12 18:13:17,981 DEBUG   HandlerThread:31952 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2025-06-12 18:13:18,714 INFO    Thread-13 :31952 [dir_watcher.py:_on_file_created():275] file/dir created: /home/trudes/Projects/t-prime/wandb/run-20250612_181317-y4c0tfiq/files/requirements.txt
+2025-06-12 18:13:18,714 INFO    Thread-13 :31952 [dir_watcher.py:_on_file_created():275] file/dir created: /home/trudes/Projects/t-prime/wandb/run-20250612_181317-y4c0tfiq/files/wandb-summary.json
+2025-06-12 18:13:18,714 INFO    Thread-13 :31952 [dir_watcher.py:_on_file_created():275] file/dir created: /home/trudes/Projects/t-prime/wandb/run-20250612_181317-y4c0tfiq/files/conda-environment.yaml
+2025-06-12 18:13:19,600 DEBUG   HandlerThread:31952 [system_info.py:_save_conda():86] Saving conda packages done
+2025-06-12 18:13:19,600 INFO    HandlerThread:31952 [system_monitor.py:probe():187] Finished publishing system info
+2025-06-12 18:13:19,604 DEBUG   SenderThread:31952 [sender.py:send():336] send: files
+2025-06-12 18:13:19,604 INFO    SenderThread:31952 [sender.py:_save_file():1321] saving file wandb-metadata.json with policy now
+2025-06-12 18:13:19,608 DEBUG   SenderThread:31952 [sender.py:send():336] send: telemetry
+2025-06-12 18:13:19,609 DEBUG   HandlerThread:31952 [handler.py:handle_request():144] handle_request: stop_status
+2025-06-12 18:13:19,609 DEBUG   SenderThread:31952 [sender.py:send_request():363] send_request: stop_status
+2025-06-12 18:13:19,715 INFO    Thread-13 :31952 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/trudes/Projects/t-prime/wandb/run-20250612_181317-y4c0tfiq/files/conda-environment.yaml
+2025-06-12 18:13:19,715 INFO    Thread-13 :31952 [dir_watcher.py:_on_file_created():275] file/dir created: /home/trudes/Projects/t-prime/wandb/run-20250612_181317-y4c0tfiq/files/wandb-metadata.json
+2025-06-12 18:13:19,867 DEBUG   SenderThread:31952 [sender.py:send():336] send: telemetry
+2025-06-12 18:13:19,868 DEBUG   SenderThread:31952 [sender.py:send():336] send: run
+2025-06-12 18:13:20,055 INFO    SenderThread:31952 [sender.py:send_run():944] updated run: y4c0tfiq
+2025-06-12 18:13:20,056 DEBUG   SenderThread:31952 [sender.py:send():336] send: exit
+2025-06-12 18:13:20,056 INFO    SenderThread:31952 [sender.py:send_exit():559] handling exit code: 1
+2025-06-12 18:13:20,056 INFO    SenderThread:31952 [sender.py:send_exit():561] handling runtime: 1
+2025-06-12 18:13:20,056 INFO    SenderThread:31952 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2025-06-12 18:13:20,056 INFO    SenderThread:31952 [sender.py:send_exit():567] send defer
+2025-06-12 18:13:20,056 DEBUG   HandlerThread:31952 [handler.py:handle_request():144] handle_request: defer
+2025-06-12 18:13:20,057 INFO    HandlerThread:31952 [handler.py:handle_request_defer():170] handle defer: 0
+2025-06-12 18:13:20,057 DEBUG   SenderThread:31952 [sender.py:send_request():363] send_request: defer
+2025-06-12 18:13:20,057 INFO    SenderThread:31952 [sender.py:send_request_defer():583] handle sender defer: 0
+2025-06-12 18:13:20,057 INFO    SenderThread:31952 [sender.py:transition_state():587] send defer: 1
+2025-06-12 18:13:20,057 DEBUG   HandlerThread:31952 [handler.py:handle_request():144] handle_request: defer
+2025-06-12 18:13:20,057 INFO    HandlerThread:31952 [handler.py:handle_request_defer():170] handle defer: 1
+2025-06-12 18:13:20,057 DEBUG   SenderThread:31952 [sender.py:send_request():363] send_request: defer
+2025-06-12 18:13:20,057 INFO    SenderThread:31952 [sender.py:send_request_defer():583] handle sender defer: 1
+2025-06-12 18:13:20,057 INFO    SenderThread:31952 [sender.py:transition_state():587] send defer: 2
+2025-06-12 18:13:20,057 DEBUG   HandlerThread:31952 [handler.py:handle_request():144] handle_request: defer
+2025-06-12 18:13:20,057 INFO    HandlerThread:31952 [handler.py:handle_request_defer():170] handle defer: 2
+2025-06-12 18:13:20,057 INFO    HandlerThread:31952 [system_monitor.py:finish():161] Stopping system monitor
+2025-06-12 18:13:20,058 DEBUG   SystemMonitor:31952 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2025-06-12 18:13:20,058 INFO    HandlerThread:31952 [interfaces.py:finish():175] Joined cpu
+2025-06-12 18:13:20,058 DEBUG   SystemMonitor:31952 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2025-06-12 18:13:20,058 INFO    HandlerThread:31952 [interfaces.py:finish():175] Joined disk
+2025-06-12 18:13:20,058 DEBUG   SystemMonitor:31952 [system_monitor.py:_start():141] Publishing last batch of metrics
+2025-06-12 18:13:20,063 INFO    HandlerThread:31952 [interfaces.py:finish():175] Joined gpu
+2025-06-12 18:13:20,063 INFO    HandlerThread:31952 [interfaces.py:finish():175] Joined memory
+2025-06-12 18:13:20,063 INFO    HandlerThread:31952 [interfaces.py:finish():175] Joined network
+2025-06-12 18:13:20,064 DEBUG   SenderThread:31952 [sender.py:send_request():363] send_request: defer
+2025-06-12 18:13:20,064 INFO    SenderThread:31952 [sender.py:send_request_defer():583] handle sender defer: 2
+2025-06-12 18:13:20,064 INFO    SenderThread:31952 [sender.py:transition_state():587] send defer: 3
+2025-06-12 18:13:20,064 DEBUG   SenderThread:31952 [sender.py:send():336] send: stats
+2025-06-12 18:13:20,064 DEBUG   HandlerThread:31952 [handler.py:handle_request():144] handle_request: defer
+2025-06-12 18:13:20,064 INFO    HandlerThread:31952 [handler.py:handle_request_defer():170] handle defer: 3
+2025-06-12 18:13:20,064 DEBUG   SenderThread:31952 [sender.py:send_request():363] send_request: defer
+2025-06-12 18:13:20,064 INFO    SenderThread:31952 [sender.py:send_request_defer():583] handle sender defer: 3
+2025-06-12 18:13:20,064 INFO    SenderThread:31952 [sender.py:transition_state():587] send defer: 4
+2025-06-12 18:13:20,064 DEBUG   HandlerThread:31952 [handler.py:handle_request():144] handle_request: defer
+2025-06-12 18:13:20,064 INFO    HandlerThread:31952 [handler.py:handle_request_defer():170] handle defer: 4
+2025-06-12 18:13:20,065 DEBUG   SenderThread:31952 [sender.py:send_request():363] send_request: defer
+2025-06-12 18:13:20,065 INFO    SenderThread:31952 [sender.py:send_request_defer():583] handle sender defer: 4
+2025-06-12 18:13:20,065 INFO    SenderThread:31952 [sender.py:transition_state():587] send defer: 5
+2025-06-12 18:13:20,065 DEBUG   HandlerThread:31952 [handler.py:handle_request():144] handle_request: defer
+2025-06-12 18:13:20,065 INFO    HandlerThread:31952 [handler.py:handle_request_defer():170] handle defer: 5
+2025-06-12 18:13:20,065 DEBUG   SenderThread:31952 [sender.py:send():336] send: summary
+2025-06-12 18:13:20,065 INFO    SenderThread:31952 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2025-06-12 18:13:20,065 DEBUG   SenderThread:31952 [sender.py:send_request():363] send_request: defer
+2025-06-12 18:13:20,065 INFO    SenderThread:31952 [sender.py:send_request_defer():583] handle sender defer: 5
+2025-06-12 18:13:20,065 INFO    SenderThread:31952 [sender.py:transition_state():587] send defer: 6
+2025-06-12 18:13:20,065 DEBUG   HandlerThread:31952 [handler.py:handle_request():144] handle_request: defer
+2025-06-12 18:13:20,065 INFO    HandlerThread:31952 [handler.py:handle_request_defer():170] handle defer: 6
+2025-06-12 18:13:20,065 DEBUG   SenderThread:31952 [sender.py:send_request():363] send_request: defer
+2025-06-12 18:13:20,066 INFO    SenderThread:31952 [sender.py:send_request_defer():583] handle sender defer: 6
+2025-06-12 18:13:20,067 DEBUG   HandlerThread:31952 [handler.py:handle_request():144] handle_request: status_report
+2025-06-12 18:13:20,080 INFO    wandb-upload_0:31952 [upload_job.py:push():138] Uploaded file /tmp/tmpguvmqq5fwandb/5syi7a44-wandb-metadata.json
+2025-06-12 18:13:20,339 INFO    SenderThread:31952 [sender.py:transition_state():587] send defer: 7
+2025-06-12 18:13:20,339 DEBUG   HandlerThread:31952 [handler.py:handle_request():144] handle_request: defer
+2025-06-12 18:13:20,339 INFO    HandlerThread:31952 [handler.py:handle_request_defer():170] handle defer: 7
+2025-06-12 18:13:20,339 DEBUG   SenderThread:31952 [sender.py:send_request():363] send_request: defer
+2025-06-12 18:13:20,339 INFO    SenderThread:31952 [sender.py:send_request_defer():583] handle sender defer: 7
+2025-06-12 18:13:20,613 DEBUG   HandlerThread:31952 [handler.py:handle_request():144] handle_request: poll_exit
+2025-06-12 18:13:20,714 INFO    Thread-13 :31952 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/trudes/Projects/t-prime/wandb/run-20250612_181317-y4c0tfiq/files/wandb-summary.json
+2025-06-12 18:13:20,714 INFO    Thread-13 :31952 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/trudes/Projects/t-prime/wandb/run-20250612_181317-y4c0tfiq/files/config.yaml
+2025-06-12 18:13:20,714 INFO    Thread-13 :31952 [dir_watcher.py:_on_file_created():275] file/dir created: /home/trudes/Projects/t-prime/wandb/run-20250612_181317-y4c0tfiq/files/output.log
+2025-06-12 18:13:22,060 INFO    SenderThread:31952 [sender.py:transition_state():587] send defer: 8
+2025-06-12 18:13:22,061 DEBUG   SenderThread:31952 [sender.py:send_request():363] send_request: poll_exit
+2025-06-12 18:13:22,061 DEBUG   HandlerThread:31952 [handler.py:handle_request():144] handle_request: defer
+2025-06-12 18:13:22,061 INFO    HandlerThread:31952 [handler.py:handle_request_defer():170] handle defer: 8
+2025-06-12 18:13:22,061 DEBUG   SenderThread:31952 [sender.py:send_request():363] send_request: defer
+2025-06-12 18:13:22,061 INFO    SenderThread:31952 [sender.py:send_request_defer():583] handle sender defer: 8
+2025-06-12 18:13:22,071 INFO    SenderThread:31952 [sender.py:transition_state():587] send defer: 9
+2025-06-12 18:13:22,071 DEBUG   HandlerThread:31952 [handler.py:handle_request():144] handle_request: defer
+2025-06-12 18:13:22,071 INFO    HandlerThread:31952 [handler.py:handle_request_defer():170] handle defer: 9
+2025-06-12 18:13:22,071 DEBUG   SenderThread:31952 [sender.py:send():336] send: artifact
+2025-06-12 18:13:22,714 INFO    Thread-13 :31952 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/trudes/Projects/t-prime/wandb/run-20250612_181317-y4c0tfiq/files/output.log
+2025-06-12 18:13:22,926 INFO    SenderThread:31952 [sender.py:send_artifact():1417] sent artifact job-https___github.com_genesys-neu_t-prime.git_baseline_models_TPrime_torch_train.py - {'id': 'QXJ0aWZhY3Q6MTc5OTc1ODgwNA==', 'digest': 'c4739331d2f5dbd4a928822e4d8f096a', 'state': 'COMMITTED', 'aliases': [{'artifactCollectionName': 'job-https___github.com_genesys-neu_t-prime.git_baseline_models_TPrime_torch_train.py', 'alias': 'latest'}, {'artifactCollectionName': 'job-https___github.com_genesys-neu_t-prime.git_baseline_models_TPrime_torch_train.py', 'alias': 'v1'}], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY1MDU5MTI3NQ==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTc5OTc1ODgwNA==', 'versionIndex': 1}}, 'version': 'v1'}
+2025-06-12 18:13:22,927 DEBUG   SenderThread:31952 [sender.py:send_request():363] send_request: defer
+2025-06-12 18:13:22,927 INFO    SenderThread:31952 [sender.py:send_request_defer():583] handle sender defer: 9
+2025-06-12 18:13:22,927 INFO    SenderThread:31952 [dir_watcher.py:finish():362] shutting down directory watcher
+2025-06-12 18:13:23,715 INFO    SenderThread:31952 [dir_watcher.py:finish():392] scan: /home/trudes/Projects/t-prime/wandb/run-20250612_181317-y4c0tfiq/files
+2025-06-12 18:13:23,715 INFO    SenderThread:31952 [dir_watcher.py:finish():406] scan save: /home/trudes/Projects/t-prime/wandb/run-20250612_181317-y4c0tfiq/files/output.log output.log
+2025-06-12 18:13:23,716 INFO    SenderThread:31952 [dir_watcher.py:finish():406] scan save: /home/trudes/Projects/t-prime/wandb/run-20250612_181317-y4c0tfiq/files/conda-environment.yaml conda-environment.yaml
+2025-06-12 18:13:23,716 INFO    SenderThread:31952 [dir_watcher.py:finish():406] scan save: /home/trudes/Projects/t-prime/wandb/run-20250612_181317-y4c0tfiq/files/config.yaml config.yaml
+2025-06-12 18:13:23,716 INFO    SenderThread:31952 [dir_watcher.py:finish():406] scan save: /home/trudes/Projects/t-prime/wandb/run-20250612_181317-y4c0tfiq/files/wandb-metadata.json wandb-metadata.json
+2025-06-12 18:13:23,716 INFO    SenderThread:31952 [dir_watcher.py:finish():406] scan save: /home/trudes/Projects/t-prime/wandb/run-20250612_181317-y4c0tfiq/files/requirements.txt requirements.txt
+2025-06-12 18:13:23,716 INFO    SenderThread:31952 [dir_watcher.py:finish():406] scan save: /home/trudes/Projects/t-prime/wandb/run-20250612_181317-y4c0tfiq/files/wandb-summary.json wandb-summary.json
+2025-06-12 18:13:23,716 INFO    SenderThread:31952 [sender.py:transition_state():587] send defer: 10
+2025-06-12 18:13:23,716 DEBUG   HandlerThread:31952 [handler.py:handle_request():144] handle_request: defer
+2025-06-12 18:13:23,716 INFO    HandlerThread:31952 [handler.py:handle_request_defer():170] handle defer: 10
+2025-06-12 18:13:23,720 DEBUG   SenderThread:31952 [sender.py:send_request():363] send_request: defer
+2025-06-12 18:13:23,720 INFO    SenderThread:31952 [sender.py:send_request_defer():583] handle sender defer: 10
+2025-06-12 18:13:23,720 INFO    SenderThread:31952 [file_pusher.py:finish():162] shutting down file pusher
+2025-06-12 18:13:24,078 INFO    wandb-upload_1:31952 [upload_job.py:push():138] Uploaded file /home/trudes/Projects/t-prime/wandb/run-20250612_181317-y4c0tfiq/files/output.log
+2025-06-12 18:13:24,202 INFO    wandb-upload_0:31952 [upload_job.py:push():138] Uploaded file /home/trudes/Projects/t-prime/wandb/run-20250612_181317-y4c0tfiq/files/conda-environment.yaml
+2025-06-12 18:13:24,202 INFO    wandb-upload_4:31952 [upload_job.py:push():138] Uploaded file /home/trudes/Projects/t-prime/wandb/run-20250612_181317-y4c0tfiq/files/wandb-summary.json
+2025-06-12 18:13:24,204 INFO    wandb-upload_2:31952 [upload_job.py:push():138] Uploaded file /home/trudes/Projects/t-prime/wandb/run-20250612_181317-y4c0tfiq/files/config.yaml
+2025-06-12 18:13:24,259 INFO    wandb-upload_3:31952 [upload_job.py:push():138] Uploaded file /home/trudes/Projects/t-prime/wandb/run-20250612_181317-y4c0tfiq/files/requirements.txt
+2025-06-12 18:13:24,460 INFO    Thread-12 :31952 [sender.py:transition_state():587] send defer: 11
+2025-06-12 18:13:24,460 DEBUG   HandlerThread:31952 [handler.py:handle_request():144] handle_request: defer
+2025-06-12 18:13:24,460 INFO    HandlerThread:31952 [handler.py:handle_request_defer():170] handle defer: 11
+2025-06-12 18:13:24,460 DEBUG   SenderThread:31952 [sender.py:send_request():363] send_request: defer
+2025-06-12 18:13:24,460 INFO    SenderThread:31952 [sender.py:send_request_defer():583] handle sender defer: 11
+2025-06-12 18:13:24,460 INFO    SenderThread:31952 [file_pusher.py:join():167] waiting for file pusher
+2025-06-12 18:13:24,460 INFO    SenderThread:31952 [sender.py:transition_state():587] send defer: 12
+2025-06-12 18:13:24,460 DEBUG   HandlerThread:31952 [handler.py:handle_request():144] handle_request: defer
+2025-06-12 18:13:24,461 INFO    HandlerThread:31952 [handler.py:handle_request_defer():170] handle defer: 12
+2025-06-12 18:13:24,461 DEBUG   SenderThread:31952 [sender.py:send_request():363] send_request: defer
+2025-06-12 18:13:24,461 INFO    SenderThread:31952 [sender.py:send_request_defer():583] handle sender defer: 12
+2025-06-12 18:13:24,650 INFO    SenderThread:31952 [sender.py:transition_state():587] send defer: 13
+2025-06-12 18:13:24,650 DEBUG   HandlerThread:31952 [handler.py:handle_request():144] handle_request: defer
+2025-06-12 18:13:24,650 INFO    HandlerThread:31952 [handler.py:handle_request_defer():170] handle defer: 13
+2025-06-12 18:13:24,650 DEBUG   SenderThread:31952 [sender.py:send_request():363] send_request: defer
+2025-06-12 18:13:24,650 INFO    SenderThread:31952 [sender.py:send_request_defer():583] handle sender defer: 13
+2025-06-12 18:13:24,650 INFO    SenderThread:31952 [sender.py:transition_state():587] send defer: 14
+2025-06-12 18:13:24,650 DEBUG   HandlerThread:31952 [handler.py:handle_request():144] handle_request: defer
+2025-06-12 18:13:24,650 INFO    HandlerThread:31952 [handler.py:handle_request_defer():170] handle defer: 14
+2025-06-12 18:13:24,651 DEBUG   SenderThread:31952 [sender.py:send():336] send: final
+2025-06-12 18:13:24,651 DEBUG   SenderThread:31952 [sender.py:send():336] send: footer
+2025-06-12 18:13:24,651 DEBUG   SenderThread:31952 [sender.py:send_request():363] send_request: defer
+2025-06-12 18:13:24,651 INFO    SenderThread:31952 [sender.py:send_request_defer():583] handle sender defer: 14
+2025-06-12 18:13:24,651 DEBUG   HandlerThread:31952 [handler.py:handle_request():144] handle_request: poll_exit
+2025-06-12 18:13:24,652 DEBUG   HandlerThread:31952 [handler.py:handle_request():144] handle_request: server_info
+2025-06-12 18:13:24,652 DEBUG   HandlerThread:31952 [handler.py:handle_request():144] handle_request: get_summary
+2025-06-12 18:13:24,653 DEBUG   SenderThread:31952 [sender.py:send_request():363] send_request: poll_exit
+2025-06-12 18:13:24,653 DEBUG   SenderThread:31952 [sender.py:send_request():363] send_request: server_info
+2025-06-12 18:13:24,654 DEBUG   HandlerThread:31952 [handler.py:handle_request():144] handle_request: sampled_history
+2025-06-12 18:13:24,818 INFO    MainThread:31952 [wandb_run.py:_footer_history_summary_info():3442] rendering history
+2025-06-12 18:13:24,818 INFO    MainThread:31952 [wandb_run.py:_footer_history_summary_info():3474] rendering summary
+2025-06-12 18:13:24,818 INFO    MainThread:31952 [wandb_run.py:_footer_sync_info():3398] logging synced files
+2025-06-12 18:13:24,819 DEBUG   HandlerThread:31952 [handler.py:handle_request():144] handle_request: shutdown
+2025-06-12 18:13:24,819 INFO    HandlerThread:31952 [handler.py:finish():841] shutting down handler
+2025-06-12 18:13:25,652 INFO    WriterThread:31952 [datastore.py:close():299] close: /home/trudes/Projects/t-prime/wandb/run-20250612_181317-y4c0tfiq/run-y4c0tfiq.wandb
+2025-06-12 18:13:25,818 INFO    SenderThread:31952 [sender.py:finish():1493] shutting down sender
+2025-06-12 18:13:25,818 INFO    SenderThread:31952 [file_pusher.py:finish():162] shutting down file pusher
+2025-06-12 18:13:25,818 INFO    SenderThread:31952 [file_pusher.py:join():167] waiting for file pusher

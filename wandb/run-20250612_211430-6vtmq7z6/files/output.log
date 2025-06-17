@@ -1,0 +1,54 @@
+Model: baseline_cnn1d Num. Parameters: 4124229
+loss: 1.611011  [    0/47160]
+Cached files:  305
+
+
+Training epochs..: 9it [00:06,  1.50it/s]/home/trudes/anaconda3/envs/t-prime2/lib/python3.9/site-packages/wandb/wandb_torch.py:193: UserWarning: The torch.cuda.*DtypeTensor constructors are no longer recommended. It's best to use methods such as torch.tensor(data, dtype=*, device='cuda') to create tensors. (Triggered internally at ../torch/csrc/tensor/python_tensor.cpp:83.)
+  check = torch.cuda.FloatTensor(1).fill_(0)
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 48it [00:31,  1.58it/s]
+loss: 1.011428  [25600/47160]
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 89it [00:57,  1.54it/s]
+Train Error:
+
+Training epochs..: 93it [00:59,  1.56it/s]
+Traceback (most recent call last):
+  File "/home/trudes/Projects/t-prime/baseline_models/TPrime_torch_train.py", line 323, in <module>
+    epochs_loss = train_func(train_config)
+  File "/home/trudes/Projects/t-prime/baseline_models/TPrime_torch_train.py", line 157, in train_func
+    loss, acc, conf_matrix = validate_epoch(test_dataloader, model, loss_fn, Nclasses=Nclass, use_ray=use_ray)
+  File "/home/trudes/Projects/t-prime/baseline_models/TPrime_torch_train.py", line 75, in validate_epoch
+    test_loss += loss_fn(pred, y).item()
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/trudes/Projects/t-prime/baseline_models/TPrime_torch_train.py", line 323, in <module>
+    epochs_loss = train_func(train_config)
+  File "/home/trudes/Projects/t-prime/baseline_models/TPrime_torch_train.py", line 157, in train_func
+    loss, acc, conf_matrix = validate_epoch(test_dataloader, model, loss_fn, Nclasses=Nclass, use_ray=use_ray)
+  File "/home/trudes/Projects/t-prime/baseline_models/TPrime_torch_train.py", line 75, in validate_epoch
+    test_loss += loss_fn(pred, y).item()
+KeyboardInterrupt

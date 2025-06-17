@@ -1,0 +1,98 @@
+Model: baseline_cnn1d Num. Parameters: 4124229
+loss: 1.608394  [    0/377280]
+Cached files:  469
+
+
+Training epochs..: 9it [00:07,  1.28it/s]/home/trudes/anaconda3/envs/t-prime2/lib/python3.9/site-packages/wandb/wandb_torch.py:193: UserWarning: The torch.cuda.*DtypeTensor constructors are no longer recommended. It's best to use methods such as torch.tensor(data, dtype=*, device='cuda') to create tensors. (Triggered internally at ../torch/csrc/tensor/python_tensor.cpp:83.)
+  check = torch.cuda.FloatTensor(1).fill_(0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 50it [00:35,  1.39it/s]
+loss: 1.064381  [25600/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 98it [01:07,  1.53it/s]
+loss: 1.022887  [51200/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 139it [01:34,  1.47it/s]
+Traceback (most recent call last):
+  File "/home/trudes/Projects/t-prime/baseline_models/TPrime_torch_train.py", line 323, in <module>
+    epochs_loss = train_func(train_config)
+  File "/home/trudes/Projects/t-prime/baseline_models/TPrime_torch_train.py", line 153, in train_func
+    tr_loss, tr_acc = train_epoch(train_dataloader, model, loss_fn, optimizer, use_ray)
+  File "/home/trudes/Projects/t-prime/baseline_models/TPrime_torch_train.py", line 37, in train_epoch
+    for batch, (X, y) in tqdm(enumerate(dataloader), desc="Training epochs.."):
+  File "/home/trudes/anaconda3/envs/t-prime2/lib/python3.9/site-packages/tqdm/std.py", line 1181, in __iter__
+    for obj in iterable:
+  File "/home/trudes/anaconda3/envs/t-prime2/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 630, in __next__
+    data = self._next_data()
+  File "/home/trudes/anaconda3/envs/t-prime2/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 674, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/trudes/anaconda3/envs/t-prime2/lib/python3.9/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/trudes/anaconda3/envs/t-prime2/lib/python3.9/site-packages/torch/utils/data/_utils/fetch.py", line 51, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/trudes/Projects/t-prime/preprocessing/TPrime_dataset.py", line 328, in __getitem__
+    noisy_sig = self.apply_AWGN(chan_sig) if self.apply_noise else chan_sig
+  File "/home/trudes/Projects/t-prime/preprocessing/TPrime_dataset.py", line 371, in apply_AWGN
+    noise_samples = np.random.normal(0, complex_std, size=sig.shape) + 1j * np.random.normal(0, complex_std,
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/trudes/Projects/t-prime/baseline_models/TPrime_torch_train.py", line 323, in <module>
+    epochs_loss = train_func(train_config)
+  File "/home/trudes/Projects/t-prime/baseline_models/TPrime_torch_train.py", line 153, in train_func
+    tr_loss, tr_acc = train_epoch(train_dataloader, model, loss_fn, optimizer, use_ray)
+  File "/home/trudes/Projects/t-prime/baseline_models/TPrime_torch_train.py", line 37, in train_epoch
+    for batch, (X, y) in tqdm(enumerate(dataloader), desc="Training epochs.."):
+  File "/home/trudes/anaconda3/envs/t-prime2/lib/python3.9/site-packages/tqdm/std.py", line 1181, in __iter__
+    for obj in iterable:
+  File "/home/trudes/anaconda3/envs/t-prime2/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 630, in __next__
+    data = self._next_data()
+  File "/home/trudes/anaconda3/envs/t-prime2/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 674, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/trudes/anaconda3/envs/t-prime2/lib/python3.9/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/trudes/anaconda3/envs/t-prime2/lib/python3.9/site-packages/torch/utils/data/_utils/fetch.py", line 51, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/trudes/Projects/t-prime/preprocessing/TPrime_dataset.py", line 328, in __getitem__
+    noisy_sig = self.apply_AWGN(chan_sig) if self.apply_noise else chan_sig
+  File "/home/trudes/Projects/t-prime/preprocessing/TPrime_dataset.py", line 371, in apply_AWGN
+    noise_samples = np.random.normal(0, complex_std, size=sig.shape) + 1j * np.random.normal(0, complex_std,
+KeyboardInterrupt

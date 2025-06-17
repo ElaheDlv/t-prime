@@ -142,6 +142,12 @@ class TPrimeDataset(Dataset):
     
     def generate_windows(self, len_sig):
         return list(range(0, len_sig-self.slice_len, self.overlap))
+    # def generate_windows(self, len_sig):
+    #     step = self.slice_len - int(self.slice_len * self.slice_overlap_ratio)
+    #     if len_sig <= self.slice_len:
+    #         return [0]
+    #     last = len_sig - self.slice_len
+    #     return list(range(0, last, step))
 
     def generate_ds_map(self, ds_path, filename, test_ratio=0.2):
         examples_map = {}

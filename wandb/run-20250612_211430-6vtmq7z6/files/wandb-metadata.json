@@ -1,0 +1,159 @@
+{
+    "os": "Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.31",
+    "python": "3.9.23",
+    "heartbeatAt": "2025-06-13T01:14:31.326638",
+    "startedAt": "2025-06-13T01:14:30.701831",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--model=baseline_cnn1d",
+        "--channel=None",
+        "--snr_db=30",
+        "--cp_path=./results_slice512",
+        "--postfix=all20MHz",
+        "--raw_path=./data/DATASET_QYLUR_ANOM_small_frames",
+        "--protocols",
+        "noAnomaly",
+        "cfoAnomaly",
+        "envDistortionAnomaly",
+        "pilotJamAnomaly",
+        "powerAnomaly",
+        "--slicelen=512"
+    ],
+    "state": "running",
+    "program": "/home/trudes/Projects/t-prime/baseline_models/TPrime_torch_train.py",
+    "codePath": "baseline_models/TPrime_torch_train.py",
+    "git": {
+        "remote": "https://github.com/genesys-neu/t-prime.git",
+        "commit": "05b3366c5ba1ac6d4a5432e90ae0edf6efb7b1b2"
+    },
+    "email": "Strudeau12@seaburyhall.orgTrudeau.s@northeastern.edu",
+    "root": "/home/trudes/Projects/t-prime",
+    "host": "Sage-Omen",
+    "username": "trudes",
+    "executable": "/home/trudes/anaconda3/envs/t-prime2/bin/python3",
+    "cpu_count": 10,
+    "cpu_count_logical": 20,
+    "cpu_freq": {
+        "current": 2687.9989999999984,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2687.999,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2687.999,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2687.999,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2687.999,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2687.999,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2687.999,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2687.999,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2687.999,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2687.999,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2687.999,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2687.999,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2687.999,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2687.999,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2687.999,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2687.999,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2687.999,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2687.999,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2687.999,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2687.999,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2687.999,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "total": 250.92389297485352,
+        "used": 92.49730682373047
+    },
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3060 Laptop GPU",
+            "memory_total": 6442450944
+        }
+    ],
+    "memory": {
+        "total": 31.185882568359375
+    }
+}

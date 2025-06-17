@@ -1,0 +1,87 @@
+2025-06-12 14:58:18,558 INFO    StreamThr :26684 [internal.py:wandb_internal():87] W&B internal server running at pid: 26684, started at: 2025-06-12 14:58:18.557865
+2025-06-12 14:58:18,560 DEBUG   HandlerThread:26684 [handler.py:handle_request():144] handle_request: status
+2025-06-12 14:58:18,562 INFO    WriterThread:26684 [datastore.py:open_for_write():85] open: /home/trudes/Projects/t-prime/wandb/run-20250612_145818-q4dqx4pn/run-q4dqx4pn.wandb
+2025-06-12 14:58:18,563 DEBUG   SenderThread:26684 [sender.py:send():336] send: header
+2025-06-12 14:58:18,567 DEBUG   SenderThread:26684 [sender.py:send():336] send: run
+2025-06-12 14:58:23,569 DEBUG   HandlerThread:26684 [handler.py:handle_request():144] handle_request: keepalive
+2025-06-12 14:58:28,571 DEBUG   HandlerThread:26684 [handler.py:handle_request():144] handle_request: keepalive
+2025-06-12 14:58:33,572 DEBUG   HandlerThread:26684 [handler.py:handle_request():144] handle_request: keepalive
+2025-06-12 14:58:38,574 DEBUG   HandlerThread:26684 [handler.py:handle_request():144] handle_request: keepalive
+2025-06-12 14:58:43,575 DEBUG   HandlerThread:26684 [handler.py:handle_request():144] handle_request: keepalive
+2025-06-12 14:58:48,577 DEBUG   HandlerThread:26684 [handler.py:handle_request():144] handle_request: keepalive
+2025-06-12 14:58:52,485 INFO    SenderThread:26684 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "/home/trudes/anaconda3/envs/t-prime2/lib/python3.9/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/trudes/anaconda3/envs/t-prime2/lib/python3.9/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "/home/trudes/anaconda3/envs/t-prime2/lib/python3.9/http/client.py", line 1377, in getresponse
+    response.begin()
+  File "/home/trudes/anaconda3/envs/t-prime2/lib/python3.9/http/client.py", line 320, in begin
+    version, status, reason = self._read_status()
+  File "/home/trudes/anaconda3/envs/t-prime2/lib/python3.9/http/client.py", line 281, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/home/trudes/anaconda3/envs/t-prime2/lib/python3.9/socket.py", line 716, in readinto
+    return self._sock.recv_into(b)
+  File "/home/trudes/anaconda3/envs/t-prime2/lib/python3.9/ssl.py", line 1275, in recv_into
+    return self.read(nbytes, buffer)
+  File "/home/trudes/anaconda3/envs/t-prime2/lib/python3.9/ssl.py", line 1133, in read
+    return self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/trudes/anaconda3/envs/t-prime2/lib/python3.9/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/home/trudes/anaconda3/envs/t-prime2/lib/python3.9/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/home/trudes/anaconda3/envs/t-prime2/lib/python3.9/site-packages/urllib3/util/retry.py", line 550, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/trudes/anaconda3/envs/t-prime2/lib/python3.9/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/home/trudes/anaconda3/envs/t-prime2/lib/python3.9/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/trudes/anaconda3/envs/t-prime2/lib/python3.9/site-packages/urllib3/connectionpool.py", line 451, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/home/trudes/anaconda3/envs/t-prime2/lib/python3.9/site-packages/urllib3/connectionpool.py", line 340, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Read timed out. (read timeout=10)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/trudes/anaconda3/envs/t-prime2/lib/python3.9/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/home/trudes/anaconda3/envs/t-prime2/lib/python3.9/site-packages/wandb/sdk/internal/internal_api.py", line 242, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/home/trudes/anaconda3/envs/t-prime2/lib/python3.9/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/home/trudes/anaconda3/envs/t-prime2/lib/python3.9/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/home/trudes/anaconda3/envs/t-prime2/lib/python3.9/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/transport/requests.py", line 38, in execute
+    request = requests.post(self.url, **post_args)
+  File "/home/trudes/anaconda3/envs/t-prime2/lib/python3.9/site-packages/requests/api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "/home/trudes/anaconda3/envs/t-prime2/lib/python3.9/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/trudes/anaconda3/envs/t-prime2/lib/python3.9/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/trudes/anaconda3/envs/t-prime2/lib/python3.9/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/trudes/anaconda3/envs/t-prime2/lib/python3.9/site-packages/requests/adapters.py", line 713, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.wandb.ai', port=443): Read timed out. (read timeout=10)
+2025-06-12 14:58:53,579 DEBUG   HandlerThread:26684 [handler.py:handle_request():144] handle_request: keepalive
+2025-06-12 14:58:58,580 DEBUG   HandlerThread:26684 [handler.py:handle_request():144] handle_request: keepalive
+2025-06-12 14:59:03,582 DEBUG   HandlerThread:26684 [handler.py:handle_request():144] handle_request: keepalive
+2025-06-12 14:59:08,583 DEBUG   HandlerThread:26684 [handler.py:handle_request():144] handle_request: keepalive
+2025-06-12 14:59:13,585 DEBUG   HandlerThread:26684 [handler.py:handle_request():144] handle_request: keepalive
+2025-06-12 14:59:18,587 DEBUG   HandlerThread:26684 [handler.py:handle_request():144] handle_request: cancel
+2025-06-12 14:59:18,587 DEBUG   HandlerThread:26684 [handler.py:handle_request():144] handle_request: cancel
+2025-06-12 14:59:20,598 DEBUG   HandlerThread:26684 [handler.py:handle_request():144] handle_request: shutdown
+2025-06-12 14:59:20,598 INFO    HandlerThread:26684 [handler.py:finish():841] shutting down handler
+2025-06-12 14:59:21,588 INFO    WriterThread:26684 [datastore.py:close():299] close: /home/trudes/Projects/t-prime/wandb/run-20250612_145818-q4dqx4pn/run-q4dqx4pn.wandb
+2025-06-12 14:59:25,558 DEBUG   SenderThread:26684 [sender.py:send():345] Record cancelled: run
+2025-06-12 14:59:25,558 INFO    SenderThread:26684 [sender.py:finish():1493] shutting down sender

@@ -1,0 +1,59 @@
+wandb_version: 1
+
+Architecture:
+  desc: null
+  value: baseline_cnn1d
+Batch size:
+  desc: null
+  value: 512
+Dataset:
+  desc: null
+  value: '1_1'
+Dataset_Ratio:
+  desc: null
+  value: 1.0
+Learning rate:
+  desc: null
+  value: 0.001
+Slice length:
+  desc: null
+  value: 512
+Snr (dbs):
+  desc: null
+  value:
+  - range
+Wireless channel:
+  desc: null
+  value: null
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.13.10
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.9.23
+    start_time: 1749767566.273856
+    t:
+      1:
+      - 1
+      - 5
+      - 30
+      - 53
+      - 55
+      2:
+      - 1
+      - 5
+      - 30
+      - 53
+      - 55
+      3:
+      - 1
+      - 16
+      - 17
+      - 23
+      - 37
+      4: 3.9.23
+      5: 0.13.10
+      8:
+      - 5

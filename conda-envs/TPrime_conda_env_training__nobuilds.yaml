@@ -8,7 +8,6 @@ dependencies:
   - aiohttp=3.8.1
   - aiosignal=1.2.0
   - alabaster=0.7.12
-  - anaconda=2022.05
   - anaconda-client=1.9.0
   - anaconda-navigator=2.1.4
   - anaconda-project=0.10.2
@@ -481,9 +480,6 @@ dependencies:
     - tensorflow-estimator==2.9.0
     - tensorflow-io-gcs-filesystem==0.26.0
     - termcolor==1.1.0
-    - torch==1.12.0
-    - torchaudio==0.12.0
-    - torchvision==0.13.0
     - typing==3.7.4.3
     - typing-extensions==4.5.0
     - urllib3==1.26.14

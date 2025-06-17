@@ -207,8 +207,8 @@ if __name__ == "__main__":
     parser.add_argument("--address", required=False, type=str, help="the address to use for Ray")
     parser.add_argument("--test", action="store_true", default=False, help="Testing the model")
     parser.add_argument("--cp_path", default='./', help='Path to the checkpoint to save/load the model.')
-    parser.add_argument("--protocols", nargs='+', default=['802_11ax', '802_11b_upsampled', '802_11n', '802_11g'],
-                        choices=['802_11ax', '802_11b', '802_11b_upsampled', '802_11n', '802_11g'], help="Specify the protocols/classes to be included in the training")
+    parser.add_argument("--protocols", nargs='+', default=['noAnomaly', 'cfoAnomaly', 'envDistortionAnomaly', 'pilotJamAnomaly', 'powerAnomaly'],
+                        choices=['noAnomaly', 'cfoAnomaly', 'envDistortionAnomaly', 'pilotJamAnomaly', 'powerAnomaly'], help="Specify the protocols/classes to be included in the training")
     parser.add_argument("--channel", default=None, choices=['TGn', 'TGax', 'Rayleigh', 'relative', 'random', 'None', None], help="Specify the channel models to apply during data generation. ")
     parser.add_argument('--raw_path', default='../data/DATASET1_1', help='Path where raw signals are stored.')
     parser.add_argument('--slicelen', default=128, type=int, help='Signal slice size')
@@ -233,7 +233,7 @@ if __name__ == "__main__":
                            slice_overlap_ratio=float(args.overlap_ratio),
                            raw_data_ratio=args.raw_data_ratio,
                            file_postfix=args.postfix,
-                           override_gen_map=False,
+                           override_gen_map=True,
                            apply_wchannel=args.channel,
                            apply_noise=args.noise,
                            out_mode=args.out_mode)
@@ -245,7 +245,7 @@ if __name__ == "__main__":
                           slice_overlap_ratio=float(args.overlap_ratio),
                           raw_data_ratio=args.raw_data_ratio,
                           file_postfix=args.postfix,
-                          override_gen_map=False,    # it will use the same as above call
+                          override_gen_map=True,    # it will use the same as above call
                           apply_wchannel=args.channel,
                           apply_noise=args.noise,
                           out_mode=args.out_mode)
@@ -272,7 +272,7 @@ if __name__ == "__main__":
 
         "lr": 1e-3,
         "batch_size": 512,
-        "epochs": 5,
+        "epochs": 50,
         'pytorch_model': args.model,
         'Nclass': Nclass,
         'useRay': args.useRay,

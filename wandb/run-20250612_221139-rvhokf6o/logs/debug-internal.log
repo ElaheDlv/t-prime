@@ -1,0 +1,377 @@
+2025-06-12 22:11:39,999 INFO    StreamThr :23589 [internal.py:wandb_internal():87] W&B internal server running at pid: 23589, started at: 2025-06-12 22:11:39.999180
+2025-06-12 22:11:40,001 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: status
+2025-06-12 22:11:40,002 INFO    WriterThread:23589 [datastore.py:open_for_write():85] open: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/run-rvhokf6o.wandb
+2025-06-12 22:11:40,003 DEBUG   SenderThread:23589 [sender.py:send():336] send: header
+2025-06-12 22:11:40,016 DEBUG   SenderThread:23589 [sender.py:send():336] send: run
+2025-06-12 22:11:40,442 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: check_version
+2025-06-12 22:11:40,443 INFO    SenderThread:23589 [dir_watcher.py:__init__():216] watching files in: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files
+2025-06-12 22:11:40,444 INFO    SenderThread:23589 [sender.py:_start_run_threads():1067] run started: rvhokf6o with start time 1749780699.997659
+2025-06-12 22:11:40,444 DEBUG   SenderThread:23589 [sender.py:send_request():363] send_request: summary_record
+2025-06-12 22:11:40,444 INFO    SenderThread:23589 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2025-06-12 22:11:40,444 DEBUG   SenderThread:23589 [sender.py:send_request():363] send_request: check_version
+2025-06-12 22:11:40,554 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: run_start
+2025-06-12 22:11:40,603 DEBUG   HandlerThread:23589 [system_info.py:__init__():31] System info init
+2025-06-12 22:11:40,603 DEBUG   HandlerThread:23589 [system_info.py:__init__():46] System info init done
+2025-06-12 22:11:40,603 INFO    HandlerThread:23589 [system_monitor.py:start():151] Starting system monitor
+2025-06-12 22:11:40,603 INFO    SystemMonitor:23589 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2025-06-12 22:11:40,603 INFO    HandlerThread:23589 [system_monitor.py:probe():172] Collecting system info
+2025-06-12 22:11:40,604 INFO    SystemMonitor:23589 [interfaces.py:start():168] Started cpu
+2025-06-12 22:11:40,605 INFO    SystemMonitor:23589 [interfaces.py:start():168] Started disk
+2025-06-12 22:11:40,605 INFO    SystemMonitor:23589 [interfaces.py:start():168] Started gpu
+2025-06-12 22:11:40,606 INFO    SystemMonitor:23589 [interfaces.py:start():168] Started memory
+2025-06-12 22:11:40,606 INFO    SystemMonitor:23589 [interfaces.py:start():168] Started network
+2025-06-12 22:11:40,619 DEBUG   HandlerThread:23589 [system_info.py:probe():195] Probing system
+2025-06-12 22:11:40,653 DEBUG   HandlerThread:23589 [system_info.py:_probe_git():180] Probing git
+2025-06-12 22:11:40,660 DEBUG   HandlerThread:23589 [system_info.py:_probe_git():188] Probing git done
+2025-06-12 22:11:40,660 DEBUG   HandlerThread:23589 [system_info.py:probe():241] Probing system done
+2025-06-12 22:11:40,660 DEBUG   HandlerThread:23589 [system_monitor.py:probe():181] {'os': 'Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.31', 'python': '3.9.23', 'heartbeatAt': '2025-06-13T02:11:40.620054', 'startedAt': '2025-06-13T02:11:39.992306', 'docker': None, 'cuda': None, 'args': ('--model=baseline_cnn1d', '--channel=None', '--snr_db=30', '--cp_path=./results_qylur_anom1', '--postfix=all20MHz', '--raw_path=./data/DATASET_QYLUR_ANOM_small_frames', '--protocols', 'noAnomaly', 'cfoAnomaly', 'envDistortionAnomaly', 'pilotJamAnomaly', 'powerAnomaly', '--slicelen=512'), 'state': 'running', 'program': '/home/trudes/Projects/t-prime/baseline_models/TPrime_torch_train.py', 'codePath': 'baseline_models/TPrime_torch_train.py', 'git': {'remote': 'https://github.com/genesys-neu/t-prime.git', 'commit': '05b3366c5ba1ac6d4a5432e90ae0edf6efb7b1b2'}, 'email': 'Strudeau12@seaburyhall.orgTrudeau.s@northeastern.edu', 'root': '/home/trudes/Projects/t-prime', 'host': 'Sage-Omen', 'username': 'trudes', 'executable': '/home/trudes/anaconda3/envs/t-prime2/bin/python3', 'cpu_count': 10, 'cpu_count_logical': 20, 'cpu_freq': {'current': 2687.9989999999984, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 2687.999, 'min': 0.0, 'max': 0.0}, {'current': 2687.999, 'min': 0.0, 'max': 0.0}, {'current': 2687.999, 'min': 0.0, 'max': 0.0}, {'current': 2687.999, 'min': 0.0, 'max': 0.0}, {'current': 2687.999, 'min': 0.0, 'max': 0.0}, {'current': 2687.999, 'min': 0.0, 'max': 0.0}, {'current': 2687.999, 'min': 0.0, 'max': 0.0}, {'current': 2687.999, 'min': 0.0, 'max': 0.0}, {'current': 2687.999, 'min': 0.0, 'max': 0.0}, {'current': 2687.999, 'min': 0.0, 'max': 0.0}, {'current': 2687.999, 'min': 0.0, 'max': 0.0}, {'current': 2687.999, 'min': 0.0, 'max': 0.0}, {'current': 2687.999, 'min': 0.0, 'max': 0.0}, {'current': 2687.999, 'min': 0.0, 'max': 0.0}, {'current': 2687.999, 'min': 0.0, 'max': 0.0}, {'current': 2687.999, 'min': 0.0, 'max': 0.0}, {'current': 2687.999, 'min': 0.0, 'max': 0.0}, {'current': 2687.999, 'min': 0.0, 'max': 0.0}, {'current': 2687.999, 'min': 0.0, 'max': 0.0}, {'current': 2687.999, 'min': 0.0, 'max': 0.0}], 'disk': {'total': 250.92389297485352, 'used': 92.73571395874023}, 'gpu': 'NVIDIA GeForce RTX 3060 Laptop GPU', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3060 Laptop GPU', 'memory_total': 6442450944}], 'memory': {'total': 31.185882568359375}}
+2025-06-12 22:11:40,660 INFO    HandlerThread:23589 [system_monitor.py:probe():182] Finished collecting system info
+2025-06-12 22:11:40,660 INFO    HandlerThread:23589 [system_monitor.py:probe():185] Publishing system info
+2025-06-12 22:11:40,660 DEBUG   HandlerThread:23589 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2025-06-12 22:11:40,661 DEBUG   HandlerThread:23589 [system_info.py:_save_pip():67] Saving pip packages done
+2025-06-12 22:11:40,661 DEBUG   HandlerThread:23589 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2025-06-12 22:11:41,445 INFO    Thread-13 :23589 [dir_watcher.py:_on_file_created():275] file/dir created: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/conda-environment.yaml
+2025-06-12 22:11:41,445 INFO    Thread-13 :23589 [dir_watcher.py:_on_file_created():275] file/dir created: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/requirements.txt
+2025-06-12 22:11:41,445 INFO    Thread-13 :23589 [dir_watcher.py:_on_file_created():275] file/dir created: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/wandb-summary.json
+2025-06-12 22:11:42,401 DEBUG   HandlerThread:23589 [system_info.py:_save_conda():86] Saving conda packages done
+2025-06-12 22:11:42,402 INFO    HandlerThread:23589 [system_monitor.py:probe():187] Finished publishing system info
+2025-06-12 22:11:42,406 DEBUG   SenderThread:23589 [sender.py:send():336] send: files
+2025-06-12 22:11:42,406 INFO    SenderThread:23589 [sender.py:_save_file():1321] saving file wandb-metadata.json with policy now
+2025-06-12 22:11:42,409 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: stop_status
+2025-06-12 22:11:42,410 DEBUG   SenderThread:23589 [sender.py:send_request():363] send_request: stop_status
+2025-06-12 22:11:42,445 INFO    Thread-13 :23589 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/conda-environment.yaml
+2025-06-12 22:11:42,445 INFO    Thread-13 :23589 [dir_watcher.py:_on_file_created():275] file/dir created: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/wandb-metadata.json
+2025-06-12 22:11:42,763 DEBUG   SenderThread:23589 [sender.py:send():336] send: telemetry
+2025-06-12 22:11:42,763 DEBUG   SenderThread:23589 [sender.py:send():336] send: telemetry
+2025-06-12 22:11:42,763 DEBUG   SenderThread:23589 [sender.py:send():336] send: run
+2025-06-12 22:11:42,941 INFO    SenderThread:23589 [sender.py:send_run():944] updated run: rvhokf6o
+2025-06-12 22:11:42,943 DEBUG   SenderThread:23589 [sender.py:send():336] send: telemetry
+2025-06-12 22:11:43,005 INFO    wandb-upload_0:23589 [upload_job.py:push():138] Uploaded file /tmp/tmp6xp2pcybwandb/id0tvgxr-wandb-metadata.json
+2025-06-12 22:11:43,445 INFO    Thread-13 :23589 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/config.yaml
+2025-06-12 22:11:43,446 INFO    Thread-13 :23589 [dir_watcher.py:_on_file_created():275] file/dir created: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/output.log
+2025-06-12 22:11:45,446 INFO    Thread-13 :23589 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/output.log
+2025-06-12 22:11:45,566 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: status_report
+2025-06-12 22:11:47,447 INFO    Thread-13 :23589 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/output.log
+2025-06-12 22:11:49,448 INFO    Thread-13 :23589 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/output.log
+2025-06-12 22:11:50,865 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: status_report
+2025-06-12 22:11:50,917 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:11:50,918 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:11:50,926 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:11:50,948 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:11:50,988 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:11:50,990 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:11:51,014 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:11:51,016 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:11:51,448 INFO    Thread-13 :23589 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/output.log
+2025-06-12 22:11:53,449 INFO    Thread-13 :23589 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/output.log
+2025-06-12 22:11:55,450 INFO    Thread-13 :23589 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/output.log
+2025-06-12 22:11:55,923 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: status_report
+2025-06-12 22:11:57,409 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: keepalive
+2025-06-12 22:11:57,410 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: keepalive
+2025-06-12 22:11:57,451 INFO    Thread-13 :23589 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/output.log
+2025-06-12 22:11:58,053 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:11:58,054 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:11:58,061 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:11:58,081 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:11:58,121 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:11:58,122 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:11:58,144 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:11:58,146 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:11:59,451 INFO    Thread-13 :23589 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/output.log
+2025-06-12 22:12:01,431 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: status_report
+2025-06-12 22:12:01,452 INFO    Thread-13 :23589 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/output.log
+2025-06-12 22:12:02,410 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: keepalive
+2025-06-12 22:12:03,453 INFO    Thread-13 :23589 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/output.log
+2025-06-12 22:12:04,650 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:04,651 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:04,653 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:04,657 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:04,666 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:04,668 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:04,671 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:04,672 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:05,454 INFO    Thread-13 :23589 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/output.log
+2025-06-12 22:12:06,555 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: status_report
+2025-06-12 22:12:07,412 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: keepalive
+2025-06-12 22:12:07,455 INFO    Thread-13 :23589 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/output.log
+2025-06-12 22:12:09,456 INFO    Thread-13 :23589 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/output.log
+2025-06-12 22:12:11,158 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:11,160 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:11,167 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:11,184 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:11,219 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:11,221 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:11,243 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:11,244 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:11,457 INFO    Thread-13 :23589 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/output.log
+2025-06-12 22:12:11,895 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: status_report
+2025-06-12 22:12:12,413 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: keepalive
+2025-06-12 22:12:12,457 INFO    Thread-13 :23589 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/config.yaml
+2025-06-12 22:12:13,457 INFO    Thread-13 :23589 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/output.log
+2025-06-12 22:12:15,458 INFO    Thread-13 :23589 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/output.log
+2025-06-12 22:12:17,107 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: status_report
+2025-06-12 22:12:17,414 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: keepalive
+2025-06-12 22:12:17,459 INFO    Thread-13 :23589 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/output.log
+2025-06-12 22:12:17,861 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:17,862 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:17,870 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:17,888 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:17,923 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:17,925 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:17,947 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:17,948 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:19,459 INFO    Thread-13 :23589 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/output.log
+2025-06-12 22:12:21,460 INFO    Thread-13 :23589 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/output.log
+2025-06-12 22:12:22,215 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: status_report
+2025-06-12 22:12:22,415 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: keepalive
+2025-06-12 22:12:23,461 INFO    Thread-13 :23589 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/output.log
+2025-06-12 22:12:24,973 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:24,976 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:24,984 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:25,003 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:25,040 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:25,041 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:25,063 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:25,064 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:25,461 INFO    Thread-13 :23589 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/output.log
+2025-06-12 22:12:27,417 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: keepalive
+2025-06-12 22:12:27,462 INFO    Thread-13 :23589 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/output.log
+2025-06-12 22:12:27,699 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: status_report
+2025-06-12 22:12:29,463 INFO    Thread-13 :23589 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/output.log
+2025-06-12 22:12:31,464 INFO    Thread-13 :23589 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/output.log
+2025-06-12 22:12:31,636 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:31,637 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:31,640 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:31,645 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:31,652 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:31,653 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:31,658 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:31,659 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:32,418 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: keepalive
+2025-06-12 22:12:32,889 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: status_report
+2025-06-12 22:12:33,464 INFO    Thread-13 :23589 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/output.log
+2025-06-12 22:12:35,465 INFO    Thread-13 :23589 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/output.log
+2025-06-12 22:12:37,419 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: keepalive
+2025-06-12 22:12:37,466 INFO    Thread-13 :23589 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/output.log
+2025-06-12 22:12:38,133 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:38,133 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:38,136 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:38,140 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:38,146 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:38,147 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:38,151 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:38,152 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:38,153 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: status_report
+2025-06-12 22:12:39,467 INFO    Thread-13 :23589 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/output.log
+2025-06-12 22:12:40,606 DEBUG   SystemMonitor:23589 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2025-06-12 22:12:40,608 DEBUG   SenderThread:23589 [sender.py:send():336] send: stats
+2025-06-12 22:12:41,468 INFO    Thread-13 :23589 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/output.log
+2025-06-12 22:12:42,420 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: keepalive
+2025-06-12 22:12:43,455 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: status_report
+2025-06-12 22:12:43,469 INFO    Thread-13 :23589 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/output.log
+2025-06-12 22:12:44,799 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:44,800 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:44,807 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:44,828 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:44,866 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:44,867 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:44,889 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:44,889 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:45,469 INFO    Thread-13 :23589 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/output.log
+2025-06-12 22:12:47,421 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: keepalive
+2025-06-12 22:12:47,470 INFO    Thread-13 :23589 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/output.log
+2025-06-12 22:12:48,727 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: status_report
+2025-06-12 22:12:49,470 INFO    Thread-13 :23589 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/output.log
+2025-06-12 22:12:51,375 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:51,376 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:51,383 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:51,401 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:51,438 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:51,439 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:51,461 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:51,463 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:51,471 INFO    Thread-13 :23589 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/output.log
+2025-06-12 22:12:52,422 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: keepalive
+2025-06-12 22:12:53,472 INFO    Thread-13 :23589 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/output.log
+2025-06-12 22:12:54,025 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: status_report
+2025-06-12 22:12:55,473 INFO    Thread-13 :23589 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/output.log
+2025-06-12 22:12:57,423 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: keepalive
+2025-06-12 22:12:57,474 INFO    Thread-13 :23589 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/output.log
+2025-06-12 22:12:57,939 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:57,941 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:57,948 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:57,962 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:57,998 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:57,999 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:58,022 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:58,023 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:12:59,373 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: status_report
+2025-06-12 22:12:59,474 INFO    Thread-13 :23589 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/output.log
+2025-06-12 22:13:01,475 INFO    Thread-13 :23589 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/output.log
+2025-06-12 22:13:02,425 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: keepalive
+2025-06-12 22:13:03,475 INFO    Thread-13 :23589 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/output.log
+2025-06-12 22:13:04,486 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:13:04,487 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:13:04,494 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:13:04,509 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:13:04,546 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:13:04,547 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:13:04,570 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:13:04,571 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:13:04,573 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: status_report
+2025-06-12 22:13:05,476 INFO    Thread-13 :23589 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/output.log
+2025-06-12 22:13:07,426 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: keepalive
+2025-06-12 22:13:07,477 INFO    Thread-13 :23589 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/output.log
+2025-06-12 22:13:09,478 INFO    Thread-13 :23589 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/output.log
+2025-06-12 22:13:09,707 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: status_report
+2025-06-12 22:13:10,608 DEBUG   SenderThread:23589 [sender.py:send():336] send: stats
+2025-06-12 22:13:11,027 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:13:11,028 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:13:11,035 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:13:11,048 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:13:11,084 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:13:11,086 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:13:11,108 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:13:11,109 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: partial_history
+2025-06-12 22:13:11,478 INFO    Thread-13 :23589 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/output.log
+2025-06-12 22:13:12,427 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: keepalive
+2025-06-12 22:13:13,479 INFO    Thread-13 :23589 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/output.log
+2025-06-12 22:13:15,007 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: status_report
+2025-06-12 22:13:15,480 INFO    Thread-13 :23589 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/output.log
+2025-06-12 22:13:17,347 DEBUG   SenderThread:23589 [sender.py:send():336] send: exit
+2025-06-12 22:13:17,347 INFO    SenderThread:23589 [sender.py:send_exit():559] handling exit code: 255
+2025-06-12 22:13:17,348 INFO    SenderThread:23589 [sender.py:send_exit():561] handling runtime: 96
+2025-06-12 22:13:17,348 INFO    SenderThread:23589 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2025-06-12 22:13:17,348 INFO    SenderThread:23589 [sender.py:send_exit():567] send defer
+2025-06-12 22:13:17,348 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: defer
+2025-06-12 22:13:17,348 INFO    HandlerThread:23589 [handler.py:handle_request_defer():170] handle defer: 0
+2025-06-12 22:13:17,349 DEBUG   SenderThread:23589 [sender.py:send_request():363] send_request: defer
+2025-06-12 22:13:17,349 INFO    SenderThread:23589 [sender.py:send_request_defer():583] handle sender defer: 0
+2025-06-12 22:13:17,349 INFO    SenderThread:23589 [sender.py:transition_state():587] send defer: 1
+2025-06-12 22:13:17,349 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: defer
+2025-06-12 22:13:17,349 INFO    HandlerThread:23589 [handler.py:handle_request_defer():170] handle defer: 1
+2025-06-12 22:13:17,349 DEBUG   SenderThread:23589 [sender.py:send_request():363] send_request: defer
+2025-06-12 22:13:17,349 INFO    SenderThread:23589 [sender.py:send_request_defer():583] handle sender defer: 1
+2025-06-12 22:13:17,349 INFO    SenderThread:23589 [sender.py:transition_state():587] send defer: 2
+2025-06-12 22:13:17,349 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: defer
+2025-06-12 22:13:17,349 INFO    HandlerThread:23589 [handler.py:handle_request_defer():170] handle defer: 2
+2025-06-12 22:13:17,349 INFO    HandlerThread:23589 [system_monitor.py:finish():161] Stopping system monitor
+2025-06-12 22:13:17,350 INFO    HandlerThread:23589 [interfaces.py:finish():175] Joined cpu
+2025-06-12 22:13:17,350 DEBUG   SystemMonitor:23589 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2025-06-12 22:13:17,351 INFO    HandlerThread:23589 [interfaces.py:finish():175] Joined disk
+2025-06-12 22:13:17,351 DEBUG   SystemMonitor:23589 [system_monitor.py:_start():141] Publishing last batch of metrics
+2025-06-12 22:13:17,357 INFO    HandlerThread:23589 [interfaces.py:finish():175] Joined gpu
+2025-06-12 22:13:17,357 INFO    HandlerThread:23589 [interfaces.py:finish():175] Joined memory
+2025-06-12 22:13:17,357 INFO    HandlerThread:23589 [interfaces.py:finish():175] Joined network
+2025-06-12 22:13:17,358 DEBUG   SenderThread:23589 [sender.py:send_request():363] send_request: defer
+2025-06-12 22:13:17,358 INFO    SenderThread:23589 [sender.py:send_request_defer():583] handle sender defer: 2
+2025-06-12 22:13:17,358 INFO    SenderThread:23589 [sender.py:transition_state():587] send defer: 3
+2025-06-12 22:13:17,358 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: defer
+2025-06-12 22:13:17,358 INFO    HandlerThread:23589 [handler.py:handle_request_defer():170] handle defer: 3
+2025-06-12 22:13:17,360 DEBUG   SenderThread:23589 [sender.py:send():336] send: stats
+2025-06-12 22:13:17,361 DEBUG   SenderThread:23589 [sender.py:send():336] send: history
+2025-06-12 22:13:17,361 DEBUG   SenderThread:23589 [sender.py:send_request():363] send_request: summary_record
+2025-06-12 22:13:17,362 INFO    SenderThread:23589 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2025-06-12 22:13:17,362 DEBUG   SenderThread:23589 [sender.py:send_request():363] send_request: defer
+2025-06-12 22:13:17,362 INFO    SenderThread:23589 [sender.py:send_request_defer():583] handle sender defer: 3
+2025-06-12 22:13:17,362 INFO    SenderThread:23589 [sender.py:transition_state():587] send defer: 4
+2025-06-12 22:13:17,362 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: defer
+2025-06-12 22:13:17,362 INFO    HandlerThread:23589 [handler.py:handle_request_defer():170] handle defer: 4
+2025-06-12 22:13:17,363 DEBUG   SenderThread:23589 [sender.py:send_request():363] send_request: defer
+2025-06-12 22:13:17,363 INFO    SenderThread:23589 [sender.py:send_request_defer():583] handle sender defer: 4
+2025-06-12 22:13:17,363 INFO    SenderThread:23589 [sender.py:transition_state():587] send defer: 5
+2025-06-12 22:13:17,363 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: defer
+2025-06-12 22:13:17,363 INFO    HandlerThread:23589 [handler.py:handle_request_defer():170] handle defer: 5
+2025-06-12 22:13:17,363 DEBUG   SenderThread:23589 [sender.py:send():336] send: summary
+2025-06-12 22:13:17,364 INFO    SenderThread:23589 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2025-06-12 22:13:17,364 DEBUG   SenderThread:23589 [sender.py:send_request():363] send_request: defer
+2025-06-12 22:13:17,364 INFO    SenderThread:23589 [sender.py:send_request_defer():583] handle sender defer: 5
+2025-06-12 22:13:17,364 INFO    SenderThread:23589 [sender.py:transition_state():587] send defer: 6
+2025-06-12 22:13:17,364 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: defer
+2025-06-12 22:13:17,364 INFO    HandlerThread:23589 [handler.py:handle_request_defer():170] handle defer: 6
+2025-06-12 22:13:17,365 DEBUG   SenderThread:23589 [sender.py:send_request():363] send_request: defer
+2025-06-12 22:13:17,365 INFO    SenderThread:23589 [sender.py:send_request_defer():583] handle sender defer: 6
+2025-06-12 22:13:17,365 INFO    SenderThread:23589 [sender.py:transition_state():587] send defer: 7
+2025-06-12 22:13:17,365 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: status_report
+2025-06-12 22:13:17,365 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: defer
+2025-06-12 22:13:17,365 INFO    HandlerThread:23589 [handler.py:handle_request_defer():170] handle defer: 7
+2025-06-12 22:13:17,365 DEBUG   SenderThread:23589 [sender.py:send_request():363] send_request: defer
+2025-06-12 22:13:17,365 INFO    SenderThread:23589 [sender.py:send_request_defer():583] handle sender defer: 7
+2025-06-12 22:13:17,481 INFO    Thread-13 :23589 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/wandb-summary.json
+2025-06-12 22:13:17,481 INFO    Thread-13 :23589 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/output.log
+2025-06-12 22:13:18,346 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: poll_exit
+2025-06-12 22:13:19,096 INFO    SenderThread:23589 [sender.py:transition_state():587] send defer: 8
+2025-06-12 22:13:19,097 DEBUG   SenderThread:23589 [sender.py:send_request():363] send_request: poll_exit
+2025-06-12 22:13:19,097 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: defer
+2025-06-12 22:13:19,097 INFO    HandlerThread:23589 [handler.py:handle_request_defer():170] handle defer: 8
+2025-06-12 22:13:19,097 DEBUG   SenderThread:23589 [sender.py:send_request():363] send_request: defer
+2025-06-12 22:13:19,097 INFO    SenderThread:23589 [sender.py:send_request_defer():583] handle sender defer: 8
+2025-06-12 22:13:19,103 INFO    SenderThread:23589 [sender.py:transition_state():587] send defer: 9
+2025-06-12 22:13:19,103 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: defer
+2025-06-12 22:13:19,103 DEBUG   SenderThread:23589 [sender.py:send():336] send: artifact
+2025-06-12 22:13:19,103 INFO    HandlerThread:23589 [handler.py:handle_request_defer():170] handle defer: 9
+2025-06-12 22:13:19,347 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: poll_exit
+2025-06-12 22:13:19,482 INFO    Thread-13 :23589 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/output.log
+2025-06-12 22:13:20,224 INFO    wandb-upload_0:23589 [upload_job.py:push():93] Skipped uploading /home/trudes/.local/share/wandb/artifacts/staging/tmp59q_tw0j
+2025-06-12 22:13:20,437 INFO    wandb-upload_1:23589 [upload_job.py:push():96] Uploaded file /home/trudes/.local/share/wandb/artifacts/staging/tmp7wqrlxsu
+2025-06-12 22:13:21,646 INFO    SenderThread:23589 [sender.py:send_artifact():1417] sent artifact job-https___github.com_genesys-neu_t-prime.git_baseline_models_TPrime_torch_train.py - {'id': 'QXJ0aWZhY3Q6MTgwMDU2MDk4Ng==', 'digest': '5eeaf9becb362f6afc533ebd70d58e43', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY1MDU5MTI3NQ==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTgwMDM5NDY3NQ==', 'versionIndex': 4}}, 'version': 'latest'}
+2025-06-12 22:13:21,646 DEBUG   SenderThread:23589 [sender.py:send_request():363] send_request: defer
+2025-06-12 22:13:21,646 INFO    SenderThread:23589 [sender.py:send_request_defer():583] handle sender defer: 9
+2025-06-12 22:13:21,646 INFO    SenderThread:23589 [dir_watcher.py:finish():362] shutting down directory watcher
+2025-06-12 22:13:22,483 INFO    SenderThread:23589 [dir_watcher.py:finish():392] scan: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files
+2025-06-12 22:13:22,483 INFO    SenderThread:23589 [dir_watcher.py:finish():406] scan save: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/output.log output.log
+2025-06-12 22:13:22,483 INFO    SenderThread:23589 [dir_watcher.py:finish():406] scan save: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/conda-environment.yaml conda-environment.yaml
+2025-06-12 22:13:22,483 INFO    SenderThread:23589 [dir_watcher.py:finish():406] scan save: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/config.yaml config.yaml
+2025-06-12 22:13:22,484 INFO    SenderThread:23589 [dir_watcher.py:finish():406] scan save: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/wandb-metadata.json wandb-metadata.json
+2025-06-12 22:13:22,484 INFO    SenderThread:23589 [dir_watcher.py:finish():406] scan save: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/requirements.txt requirements.txt
+2025-06-12 22:13:22,484 INFO    SenderThread:23589 [dir_watcher.py:finish():406] scan save: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/wandb-summary.json wandb-summary.json
+2025-06-12 22:13:22,484 INFO    SenderThread:23589 [sender.py:transition_state():587] send defer: 10
+2025-06-12 22:13:22,484 DEBUG   SenderThread:23589 [sender.py:send_request():363] send_request: poll_exit
+2025-06-12 22:13:22,486 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: defer
+2025-06-12 22:13:22,486 INFO    HandlerThread:23589 [handler.py:handle_request_defer():170] handle defer: 10
+2025-06-12 22:13:22,491 DEBUG   SenderThread:23589 [sender.py:send_request():363] send_request: defer
+2025-06-12 22:13:22,492 INFO    SenderThread:23589 [sender.py:send_request_defer():583] handle sender defer: 10
+2025-06-12 22:13:22,492 INFO    SenderThread:23589 [file_pusher.py:finish():162] shutting down file pusher
+2025-06-12 22:13:22,911 INFO    wandb-upload_4:23589 [upload_job.py:push():138] Uploaded file /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/wandb-summary.json
+2025-06-12 22:13:22,986 INFO    wandb-upload_1:23589 [upload_job.py:push():138] Uploaded file /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/conda-environment.yaml
+2025-06-12 22:13:22,989 INFO    wandb-upload_2:23589 [upload_job.py:push():138] Uploaded file /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/config.yaml
+2025-06-12 22:13:22,996 INFO    wandb-upload_3:23589 [upload_job.py:push():138] Uploaded file /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/requirements.txt
+2025-06-12 22:13:23,048 INFO    wandb-upload_0:23589 [upload_job.py:push():138] Uploaded file /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/files/output.log
+2025-06-12 22:13:23,248 INFO    Thread-12 :23589 [sender.py:transition_state():587] send defer: 11
+2025-06-12 22:13:23,248 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: defer
+2025-06-12 22:13:23,249 INFO    HandlerThread:23589 [handler.py:handle_request_defer():170] handle defer: 11
+2025-06-12 22:13:23,249 DEBUG   SenderThread:23589 [sender.py:send_request():363] send_request: defer
+2025-06-12 22:13:23,249 INFO    SenderThread:23589 [sender.py:send_request_defer():583] handle sender defer: 11
+2025-06-12 22:13:23,249 INFO    SenderThread:23589 [file_pusher.py:join():167] waiting for file pusher
+2025-06-12 22:13:23,249 INFO    SenderThread:23589 [sender.py:transition_state():587] send defer: 12
+2025-06-12 22:13:23,249 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: defer
+2025-06-12 22:13:23,249 INFO    HandlerThread:23589 [handler.py:handle_request_defer():170] handle defer: 12
+2025-06-12 22:13:23,249 DEBUG   SenderThread:23589 [sender.py:send_request():363] send_request: defer
+2025-06-12 22:13:23,249 INFO    SenderThread:23589 [sender.py:send_request_defer():583] handle sender defer: 12
+2025-06-12 22:13:23,323 INFO    SenderThread:23589 [sender.py:transition_state():587] send defer: 13
+2025-06-12 22:13:23,324 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: defer
+2025-06-12 22:13:23,324 INFO    HandlerThread:23589 [handler.py:handle_request_defer():170] handle defer: 13
+2025-06-12 22:13:23,324 DEBUG   SenderThread:23589 [sender.py:send_request():363] send_request: defer
+2025-06-12 22:13:23,324 INFO    SenderThread:23589 [sender.py:send_request_defer():583] handle sender defer: 13
+2025-06-12 22:13:23,324 INFO    SenderThread:23589 [sender.py:transition_state():587] send defer: 14
+2025-06-12 22:13:23,325 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: defer
+2025-06-12 22:13:23,325 INFO    HandlerThread:23589 [handler.py:handle_request_defer():170] handle defer: 14
+2025-06-12 22:13:23,325 DEBUG   SenderThread:23589 [sender.py:send():336] send: final
+2025-06-12 22:13:23,325 DEBUG   SenderThread:23589 [sender.py:send():336] send: footer
+2025-06-12 22:13:23,325 DEBUG   SenderThread:23589 [sender.py:send_request():363] send_request: defer
+2025-06-12 22:13:23,325 INFO    SenderThread:23589 [sender.py:send_request_defer():583] handle sender defer: 14
+2025-06-12 22:13:23,326 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: poll_exit
+2025-06-12 22:13:23,326 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: server_info
+2025-06-12 22:13:23,326 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: get_summary
+2025-06-12 22:13:23,327 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: sampled_history
+2025-06-12 22:13:23,327 DEBUG   SenderThread:23589 [sender.py:send_request():363] send_request: poll_exit
+2025-06-12 22:13:23,327 DEBUG   SenderThread:23589 [sender.py:send_request():363] send_request: server_info
+2025-06-12 22:13:23,541 INFO    MainThread:23589 [wandb_run.py:_footer_history_summary_info():3442] rendering history
+2025-06-12 22:13:23,541 INFO    MainThread:23589 [wandb_run.py:_footer_history_summary_info():3474] rendering summary
+2025-06-12 22:13:23,541 INFO    MainThread:23589 [wandb_run.py:_footer_sync_info():3398] logging synced files
+2025-06-12 22:13:23,542 DEBUG   HandlerThread:23589 [handler.py:handle_request():144] handle_request: shutdown
+2025-06-12 22:13:23,542 INFO    HandlerThread:23589 [handler.py:finish():841] shutting down handler
+2025-06-12 22:13:24,327 INFO    WriterThread:23589 [datastore.py:close():299] close: /home/trudes/Projects/t-prime/wandb/run-20250612_221139-rvhokf6o/run-rvhokf6o.wandb
+2025-06-12 22:13:24,541 INFO    SenderThread:23589 [sender.py:finish():1493] shutting down sender
+2025-06-12 22:13:24,541 INFO    SenderThread:23589 [file_pusher.py:finish():162] shutting down file pusher
+2025-06-12 22:13:24,541 INFO    SenderThread:23589 [file_pusher.py:join():167] waiting for file pusher

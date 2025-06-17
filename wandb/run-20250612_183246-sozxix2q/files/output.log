@@ -1,0 +1,46 @@
+Training epochs..: 0it [00:00, ?it/s]
+Traceback (most recent call last):
+  File "/home/trudes/Projects/t-prime/baseline_models/TPrime_torch_train.py", line 323, in <module>
+    epochs_loss = train_func(train_config)
+  File "/home/trudes/Projects/t-prime/baseline_models/TPrime_torch_train.py", line 153, in train_func
+    tr_loss, tr_acc = train_epoch(train_dataloader, model, loss_fn, optimizer, use_ray)
+  File "/home/trudes/Projects/t-prime/baseline_models/TPrime_torch_train.py", line 41, in train_epoch
+    pred = model(X.float())
+  File "/home/trudes/anaconda3/envs/t-prime2/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/trudes/anaconda3/envs/t-prime2/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/trudes/Projects/t-prime/baseline_models/model_cnn1d.py", line 41, in forward
+    x = self.conv1(x)
+  File "/home/trudes/anaconda3/envs/t-prime2/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/trudes/anaconda3/envs/t-prime2/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/trudes/anaconda3/envs/t-prime2/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 310, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/home/trudes/anaconda3/envs/t-prime2/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 306, in _conv_forward
+    return F.conv1d(input, weight, bias, self.stride,
+RuntimeError: Calculated padded input size per channel: (1). Kernel size: (7). Kernel size can't be greater than actual input size
+Traceback (most recent call last):
+  File "/home/trudes/Projects/t-prime/baseline_models/TPrime_torch_train.py", line 323, in <module>
+    epochs_loss = train_func(train_config)
+  File "/home/trudes/Projects/t-prime/baseline_models/TPrime_torch_train.py", line 153, in train_func
+    tr_loss, tr_acc = train_epoch(train_dataloader, model, loss_fn, optimizer, use_ray)
+  File "/home/trudes/Projects/t-prime/baseline_models/TPrime_torch_train.py", line 41, in train_epoch
+    pred = model(X.float())
+  File "/home/trudes/anaconda3/envs/t-prime2/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/trudes/anaconda3/envs/t-prime2/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/trudes/Projects/t-prime/baseline_models/model_cnn1d.py", line 41, in forward
+    x = self.conv1(x)
+  File "/home/trudes/anaconda3/envs/t-prime2/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/trudes/anaconda3/envs/t-prime2/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/trudes/anaconda3/envs/t-prime2/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 310, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/home/trudes/anaconda3/envs/t-prime2/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 306, in _conv_forward
+    return F.conv1d(input, weight, bias, self.stride,
+RuntimeError: Calculated padded input size per channel: (1). Kernel size: (7). Kernel size can't be greater than actual input size
+Model: baseline_cnn1d Num. Parameters: 4124229

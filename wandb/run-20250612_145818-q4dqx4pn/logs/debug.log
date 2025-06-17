@@ -1,0 +1,28 @@
+2025-06-12 14:58:18,552 INFO    MainThread:26677 [wandb_setup.py:_flush():68] Configure stats pid to 26677
+2025-06-12 14:58:18,552 INFO    MainThread:26677 [wandb_setup.py:_flush():68] Loading settings from /home/trudes/.config/wandb/settings
+2025-06-12 14:58:18,553 INFO    MainThread:26677 [wandb_setup.py:_flush():68] Loading settings from /home/trudes/Projects/t-prime/wandb/settings
+2025-06-12 14:58:18,553 INFO    MainThread:26677 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True'}
+2025-06-12 14:58:18,553 INFO    MainThread:26677 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program_relpath': 'wandb_test.py', 'program': '/home/trudes/Projects/t-prime/wandb_test.py'}
+2025-06-12 14:58:18,553 INFO    MainThread:26677 [wandb_init.py:_log_setup():492] Logging user logs to /home/trudes/Projects/t-prime/wandb/run-20250612_145818-q4dqx4pn/logs/debug.log
+2025-06-12 14:58:18,553 INFO    MainThread:26677 [wandb_init.py:_log_setup():493] Logging internal logs to /home/trudes/Projects/t-prime/wandb/run-20250612_145818-q4dqx4pn/logs/debug-internal.log
+2025-06-12 14:58:18,553 INFO    MainThread:26677 [wandb_init.py:init():532] calling init triggers
+2025-06-12 14:58:18,553 INFO    MainThread:26677 [wandb_init.py:init():538] wandb.init called with sweep_config: {}
+config: {}
+2025-06-12 14:58:18,553 INFO    MainThread:26677 [wandb_init.py:init():588] starting backend
+2025-06-12 14:58:18,553 INFO    MainThread:26677 [wandb_init.py:init():592] setting up manager
+2025-06-12 14:58:18,555 INFO    MainThread:26677 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-06-12 14:58:18,557 INFO    MainThread:26677 [wandb_init.py:init():599] backend started and connected
+2025-06-12 14:58:18,559 INFO    MainThread:26677 [wandb_init.py:init():687] updated telemetry
+2025-06-12 14:58:18,566 INFO    MainThread:26677 [wandb_init.py:init():727] communicating run to backend with 60.0 second timeout
+2025-06-12 14:59:18,587 ERROR   MainThread:26677 [wandb_init.py:init():741] backend process timed out, exiting...
+encountered error: Error communicating with wandb process, exiting...
+For more info see: https://docs.wandb.ai/library/init#init-start-error
+2025-06-12 14:59:18,596 ERROR   MainThread:26677 [wandb_init.py:init():1160] error
+Traceback (most recent call last):
+  File "/home/trudes/anaconda3/envs/t-prime2/lib/python3.9/site-packages/wandb/sdk/wandb_init.py", line 1133, in init
+    run = wi.init()
+  File "/home/trudes/anaconda3/envs/t-prime2/lib/python3.9/site-packages/wandb/sdk/wandb_init.py", line 759, in init
+    raise error
+wandb.errors.CommError: Error communicating with wandb process, exiting...
+For more info see: https://docs.wandb.ai/library/init#init-start-error
+2025-06-12 14:59:25,559 WARNING MsgRouterThr:26677 [router.py:message_loop():77] message_loop has been closed

@@ -1,0 +1,1398 @@
+Model: baseline_cnn1d Num. Parameters: 4124229
+loss: 1.609802  [    0/377280]
+Cached files:  473
+
+
+
+Training epochs..: 9it [00:07,  1.26it/s]/home/trudes/anaconda3/envs/t-prime2/lib/python3.9/site-packages/wandb/wandb_torch.py:193: UserWarning: The torch.cuda.*DtypeTensor constructors are no longer recommended. It's best to use methods such as torch.tensor(data, dtype=*, device='cuda') to create tensors. (Triggered internally at ../torch/csrc/tensor/python_tensor.cpp:83.)
+  check = torch.cuda.FloatTensor(1).fill_(0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 50it [00:35,  1.53it/s]
+loss: 1.132036  [25600/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 101it [01:09,  1.49it/s]
+loss: 0.943853  [51200/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 149it [01:41,  1.53it/s]
+loss: 0.946142  [76800/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 200it [02:15,  1.44it/s]
+loss: 0.957371  [102400/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 249it [02:49,  1.46it/s]
+loss: 0.971118  [128000/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 299it [03:23,  1.49it/s]
+loss: 0.934151  [153600/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 349it [03:57,  1.45it/s]
+loss: 0.942610  [179200/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 400it [04:31,  1.50it/s]
+loss: 0.955314  [204800/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 449it [05:05,  1.50it/s]
+loss: 0.963550  [230400/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 499it [05:39,  1.48it/s]
+loss: 0.954056  [256000/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 549it [06:13,  1.52it/s]
+loss: 0.892786  [281600/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 600it [06:47,  1.38it/s]
+loss: 0.894765  [307200/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 648it [07:19,  1.52it/s]
+loss: 0.888774  [332800/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 699it [07:55,  1.18it/s]
+loss: 0.942737  [358400/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 734it [08:20,  1.46it/s]
+Train Error:
+
+Training epochs..: 737it [08:22,  1.47it/s]
+Test Error:
+ Accuracy: 55.2%, Avg loss: 0.895524
+loss: 0.920996  [    0/377280]
+Cached files:  3600
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 50it [00:33,  1.54it/s]
+loss: 0.856999  [25600/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 98it [01:05,  1.36it/s]
+loss: 0.908440  [51200/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 149it [01:38,  1.56it/s]
+loss: 0.917729  [76800/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 198it [02:10,  1.57it/s]
+loss: 0.834699  [102400/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 250it [02:45,  1.54it/s]
+loss: 0.918625  [128000/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 299it [03:17,  1.52it/s]
+loss: 0.904065  [153600/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 349it [03:51,  1.56it/s]
+loss: 0.910349  [179200/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 398it [04:23,  1.52it/s]
+loss: 0.923124  [204800/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 449it [04:57,  1.40it/s]
+loss: 0.951677  [230400/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 498it [05:31,  1.46it/s]
+loss: 0.848150  [256000/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 549it [06:05,  1.49it/s]
+loss: 0.866357  [281600/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 598it [06:37,  1.55it/s]
+loss: 0.862420  [307200/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 649it [07:11,  1.54it/s]
+loss: 0.871793  [332800/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 699it [07:45,  1.45it/s]
+loss: 0.891902  [358400/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 735it [08:09,  1.49it/s]
+Train Error:
+
+Training epochs..: 737it [08:11,  1.50it/s]
+Test Error:
+ Accuracy: 56.1%, Avg loss: 0.842705
+Training epochs..: 0it [00:00, ?it/s]
+loss: 0.883673  [    0/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 48it [00:30,  1.60it/s]
+loss: 0.818390  [25600/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 100it [01:04,  1.51it/s]
+loss: 0.887669  [51200/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 150it [01:36,  1.61it/s]
+loss: 0.847430  [76800/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 200it [02:08,  1.57it/s]
+loss: 0.823061  [102400/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 250it [02:40,  1.52it/s]
+loss: 0.842036  [128000/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 299it [03:12,  1.49it/s]
+loss: 0.875034  [153600/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 348it [03:44,  1.50it/s]
+loss: 0.888279  [179200/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 399it [04:18,  1.47it/s]
+loss: 0.824502  [204800/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 449it [04:53,  1.48it/s]
+loss: 0.893458  [230400/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 499it [05:24,  1.59it/s]
+loss: 0.805089  [256000/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 548it [05:58,  1.43it/s]
+loss: 0.860043  [281600/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 599it [06:35,  1.34it/s]
+loss: 0.811729  [307200/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 649it [07:07,  1.59it/s]
+loss: 0.809184  [332800/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 699it [07:39,  1.56it/s]
+loss: 0.848904  [358400/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 736it [08:03,  1.50it/s]
+Train Error:
+
+Training epochs..: 737it [08:04,  1.52it/s]
+Test Error:
+ Accuracy: 56.6%, Avg loss: 0.825647
+loss: 0.817814  [    0/377280]
+Cached files:  3600
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 48it [00:30,  1.61it/s]
+loss: 0.820070  [25600/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 98it [01:02,  1.59it/s]
+loss: 0.833025  [51200/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 149it [01:35,  1.60it/s]
+loss: 0.842732  [76800/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 199it [02:07,  1.59it/s]
+loss: 0.862199  [102400/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 249it [02:38,  1.63it/s]
+loss: 0.830080  [128000/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 299it [03:10,  1.52it/s]
+loss: 0.835983  [153600/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 350it [03:42,  1.55it/s]
+loss: 0.830281  [179200/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 397it [04:12,  1.58it/s]
+loss: 0.802889  [204800/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 447it [04:44,  1.56it/s]
+loss: 0.858868  [230400/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 497it [05:16,  1.57it/s]
+loss: 0.865779  [256000/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 549it [05:58,  1.09it/s]
+loss: 0.813937  [281600/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 600it [06:35,  1.46it/s]
+loss: 0.842797  [307200/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 648it [07:07,  1.54it/s]
+loss: 0.746991  [332800/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 699it [07:41,  1.57it/s]
+loss: 0.814636  [358400/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 735it [08:05,  1.52it/s]
+Train Error:
+
+Training epochs..: 737it [08:06,  1.51it/s]
+Test Error:
+ Accuracy: 57.1%, Avg loss: 0.811013
+Training epochs..: 0it [00:00, ?it/s]
+loss: 0.817434  [    0/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 49it [00:33,  1.53it/s]
+loss: 0.810082  [25600/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 101it [01:08,  1.44it/s]
+loss: 0.854124  [51200/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 149it [01:40,  1.56it/s]
+loss: 0.847057  [76800/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 200it [02:12,  1.55it/s]
+loss: 0.819143  [102400/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 250it [02:44,  1.63it/s]
+loss: 0.844031  [128000/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 300it [03:16,  1.52it/s]
+loss: 0.860658  [153600/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 349it [03:48,  1.55it/s]
+loss: 0.766806  [179200/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 400it [04:24,  1.33it/s]
+loss: 0.794793  [204800/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 451it [04:58,  1.62it/s]
+loss: 0.748077  [230400/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 500it [05:30,  1.40it/s]
+loss: 0.758763  [256000/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 550it [06:02,  1.59it/s]
+loss: 0.785230  [281600/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 601it [06:34,  1.51it/s]
+loss: 0.748753  [307200/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 651it [07:06,  1.51it/s]
+loss: 0.806114  [332800/377280]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 700it [07:38,  1.55it/s]
+loss: 0.819823  [358400/377280]
+
+
+
+
+
+
+
+
+
+
+
+Training epochs..: 735it [08:00,  1.59it/s]
+Train Error:
+
+Training epochs..: 737it [08:02,  1.53it/s]
+Test Error:
+ Accuracy: 57.5%, Avg loss: 0.787944
+[0.8955243896793674, 0.8427045213209616, 0.8256466652895953, 0.8110126508248819, 0.7879440107861081]
