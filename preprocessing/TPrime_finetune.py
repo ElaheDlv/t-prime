@@ -84,7 +84,7 @@ def finetune(model, config):
     # Define loss, optimizer and scheduler for training
     criterion = nn.NLLLoss()
     optimizer = torch.optim.Adam(model.parameters(), lr=config['lr']) # CHANGE FOR FINE TUNE
-    scheduler = ReduceLROnPlateau(optimizer, 'min', min_lr=0.00001, verbose=True)
+    scheduler = ReduceLROnPlateau(optimizer, 'min', min_lr=0.00001)#, verbose=True)
     train_acc = []
     test_acc = []
     best_acc = 0

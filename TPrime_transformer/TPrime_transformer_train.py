@@ -131,7 +131,7 @@ def train_func(config: Dict):
     print(f'TOTAL                {total_params}')
     loss_fn = nn.NLLLoss()
     optimizer = torch.optim.Adam(model.parameters(), lr=lr)
-    scheduler = ReduceLROnPlateau(optimizer, 'min', min_lr=0.00001, verbose=True)
+    scheduler = ReduceLROnPlateau(optimizer, 'min', min_lr=0.00001)#, verbose=True)
     loss_results = []
     best_loss = np.inf
     #wandb.watch(model, log_freq=10)

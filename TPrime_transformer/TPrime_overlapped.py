@@ -132,7 +132,7 @@ def finetune(model, config, trained_model=None):
         if p.requires_grad:
             print(name)
     optimizer = torch.optim.Adam(non_frozen_parameters, lr=config['lr']) # CHANGE FOR FINE TUNE
-    scheduler = ReduceLROnPlateau(optimizer, 'min', min_lr=0.00001, verbose=True)
+    scheduler = ReduceLROnPlateau(optimizer, 'min', min_lr=0.00001)#, verbose=True)
     train_acc = []
     test_acc = []
     best_acc = 0

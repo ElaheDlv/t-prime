@@ -143,7 +143,7 @@ def train_func(config: Dict):
     optimizer = torch.optim.Adam(model.parameters(), lr=lr)
     from torch.optim.lr_scheduler import ReduceLROnPlateau
 
-    scheduler = ReduceLROnPlateau(optimizer, 'min', min_lr=0.00001, verbose=True)
+    scheduler = ReduceLROnPlateau(optimizer, 'min', min_lr=0.00001)#, verbose=True)
     loss_results = []
     best_loss = np.inf
     if is_wandb:
