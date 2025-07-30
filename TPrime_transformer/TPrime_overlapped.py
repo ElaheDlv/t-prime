@@ -356,15 +356,20 @@ if __name__ == "__main__":
             labels = ['ax', 'b', 'n', 'g', 'noise']
             # report accuracy and save confusion matrix
             if ds_names[ds_ix].split(' ')[0] == 'DATASET3_1':
+                #print("Unique classes in global_trues:", np.unique(np.array(global_trues), axis=0))
+                #print("Class counts (sum over axis 0):", np.sum(np.array(global_trues), axis=0))
                 print(
                     f"\n\nTest Error for dataset {ds_names[ds_ix]}: \n "
                     f"Exact accuracy: {(100 * correct):>0.1f}%, "
                     f"At least one detected: {(100 * any_correct):>0.1f}%, "
-                    f"AUC: {roc_auc_score(trues, preds)} \n"
-                    f"NOISE classifications: {(100 * sum(np.array(noise_preds))/len(noise_preds))} \n"
+                    #f"AUC: {roc_auc_score(trues, preds)} \n"
+                    f"AUC: {roc_auc_score([row[:4] for row in trues], [row[:4] for row in preds])} \n"
+                    #f"NOISE classifications: {(100 * sum(np.array(noise_preds))/len(noise_preds))} \n"
                     f"Classification report: {classification_report(trues, convert(preds), labels=np.arange(len(labels)), target_names=labels, zero_division=0)}"
                 )
             elif ds_names[ds_ix].split(' ')[0] == 'DATASET3_2':
+                #print("Unique classes in global_trues:", np.unique(np.array(global_trues), axis=0))
+                #print("Class counts (sum over axis 0):", np.sum(np.array(global_trues), axis=0))
                 print(
                     f"\n\nTest Error for dataset {ds_names[ds_ix]}: \n "
                     f"Exact accuracy: {(100 * correct):>0.1f}%, "
