@@ -57,6 +57,7 @@ def train(model, criterion, optimizer, dataloader, RMSnorm_layer=None):
         if not(RMSnorm_layer is None):
             X = RMSnorm_layer(X)
         pred = model(X.float())
+        #print("pred range:", pred.min().item(), pred.max().item())
         loss = criterion(pred, y)
         correct += (torch.round(pred) == y).all(dim=1).type(torch.float).sum().item()
 

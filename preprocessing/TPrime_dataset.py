@@ -322,12 +322,47 @@ class TPrimeDataset(Dataset):
         noisy_sig = self.apply_AWGN(chan_sig) if self.apply_noise else chan_sig
 
         # then, retrieve the relative slice of the requested dataset sample
+        '''
         obs = self.retrieve_obs(noisy_sig, obs_info)
         if self.target_transform:
             label = self.target_transform(label)
         if self.double_class_label and (type(label) is not list):
             label = [label, label]
+        
+        if np.isnan(obs).any() or np.isinf(obs).any():
+            # self.last_file_loaded was set to the raw mat/bin path above
+            print(f"🚨 Corrupted sample detected! dataset idx={idx}, file={self.last_file_loaded}")
+
         return obs, label
+        '''
+       # ——— Skip any NaN/Inf slices — loop until a clean one is found ———
+        start_idx = idx
+        while True:
+            obs = self.retrieve_obs(noisy_sig, obs_info)
+            if self.target_transform:
+                label = self.target_transform(label)
+            if self.double_class_label and not isinstance(label, list):
+                label = [label, label]
+
+            # If this slice is clean, return immediately:
+            if not (np.isnan(obs).any() or np.isinf(obs).any()):
+                return obs, label
+
+            # Otherwise log & advance to the next sample
+            print(f"⚠️  Skipping corrupted sample idx={idx}, file={self.last_file_loaded}")
+            idx = (idx + 1) % len(self)
+            if idx == start_idx:
+                raise RuntimeError("All dataset samples appear corrupted!")
+
+            # re‑load obs_info & noisy_sig for the new idx:
+            s_idx    = self.ds_info['ixs_maps'][self.ds_type][idx]
+            obs_info = dataset['data'][s_idx]
+            sig_dict = self.signal_cache.get(obs_info['path'])
+            chan_sig = (self.apply_wchan(sig_dict['mat'], label)
+                        if self.apply_wchannel is not None else sig_dict['np'])
+            noisy_sig = (self.apply_AWGN(chan_sig)
+                            if self.apply_noise else chan_sig)
+        # ——————————————————————————————————————————————————————————————
 
     # Function to change the shape of obs
     # the input is obs with shape (channel, slice)
